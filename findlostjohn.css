@@ -1,122 +1,142 @@
 body,
-        html {
-            background-color: #FFEEC0;
-            height: 100%;
-            margin: 0;
-            font: 400 15px/1.8 "Lato", sans-serif;
-            color: #777;
-        }
+html {
+  background-color: #ffeec0;
+  height: 100%;
+  margin: 0;
+  font: 400 15px/1.8 "Lato", sans-serif;
+  color: #777;
+}
 
-        .bgimg-1,
-        .bgimg-2,
-        .bgimg-3 {
-            position: relative;
-            opacity: 0.65;
-            background-attachment: fixed;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
+.bgimg-1,
+.bgimg-2,
+.bgimg-3 {
+  position: relative;
+  opacity: 0.65;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
-        }
+.bgimg-1 {
+  background-image: url("./ljsplash.jpg");
+  min-height: 100%;
+}
 
-        .bgimg-1 {
-            background-image: url("./ljsplash.jpg");
-            min-height: 100%;
-        }
+.bgimg-2 {
+  background-image: url("./letitbestrange.jpg");
+  min-height: 100%;
+}
 
-        .bgimg-2 {
-            background-image: url("./letitbestrange.jpg");
-            min-height: 100%
-        }
+.bgimg-3 {
+  background-image: url("img_parallax3.jpg");
+  min-height: 400px;
+}
 
-        .bgimg-3 {
-            background-image: url("img_parallax3.jpg");
-            min-height: 400px;
-        }
+.bgimg-4 {
+  background-image: url("./ljmower.jpg");
+  min-height: 100%;
+}
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
 
-        .caption {
-            position: absolute;
-            left: 0;
-            top: 50%;
-            width: 100%;
-            text-align: center;
-            color: #000;
-        }
+.caption span.border {
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+h1,
+h2 {
+  text-align: center;
+}
+h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+  color: #111;
+}
 
-        .caption span.border {
-            background-color: #111;
-            color: #fff;
-            padding: 18px;
-            font-size: 25px;
-            letter-spacing: 10px;
-        }
+.column {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 5px;
+}
 
-        h3 {
-            letter-spacing: 5px;
-            text-transform: uppercase;
-            font: 20px "Lato", sans-serif;
-            color: #111;
-        }
+.row {
+  display: flex;
+  padding: 5px;
+}
+.album-and-player {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  /* position: relative; */
+}
 
-        .column {
-            display: flex ;
-            flex-direction: row;
-            padding: 5px;
-          }
-          
-          .row {
-         display: flex ;
-        padding: 5px;
-          }
+.album-grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: left;
+  /* z-index: 0; */
+}
+.cart {
+  text-align: right;
+}
+.hover {
+  opacity: 1;
+}
+.hover:hover {
+  opacity: 0.65;
+}
+.stickertext {
+  padding-bottom: 10px;
+}
+.center {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.recordshop {
+  height: 250px;
+  width: 375px;
+}
+.recordshopstick {
+  height: 250px;
+  width: 150px;
+}
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+  .bgimg-1,
+  .bgimg-2,
+  .bgimg-3 {
+    background-attachment: scroll;
+  }
+}
 
-        .cart {
-            text-align: right;
-        }
-        .hover {
-            opacity: 1;
-        }
-        .hover:hover{
-            opacity: .65;
-        }
+.tab {
+  padding-left: 50px;
+}
 
-        .center {
-            text-align: center;
-            justify-content: center;
-            align-items: center;
-        }
-          .recordshop {
-              height: 250px;
-              width: 375px;
-          }
-          .recordshopstick {
-            height: 250px;
-            width: 150px;
-        }
-        /* Turn off parallax scrolling for tablets and phones */
-        @media only screen and (max-device-width: 1024px) {
+a {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  font-size: 30px;
+  text-align: center;
+}
 
-            .bgimg-1,
-            .bgimg-2,
-            .bgimg-3 {
-                background-attachment: scroll;
-            }
-        }
-
-        .tab {
-            padding-left: 50px;
-        }
-
-        a {
-            text-decoration: none;
-            color: white;
-            padding: 10px;
-            font-size: 30px;
-            text-align: center;
-
-          }
-
-          .video {
-            position: relative;
-            background-attachment: fixed;
-            background-size: cover;
-          }
+.video {
+  position: relative;
+  background-attachment: fixed;
+  background-size: cover;
+}
